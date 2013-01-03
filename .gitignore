@@ -8,3 +8,6 @@ test/dummy/.sass-cache/
 test/tmp/**/*
 .idea/
 Gemfile.lock
+.DS_Store
+.*.*.sw*
+.*.sw*
