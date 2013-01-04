@@ -1,8 +1,8 @@
 require 'generators/backbone/model/model_generator'
 
 module Backbone
-  module Scaffold
-    module Generators
+  module Generators
+    module Scaffold
       class BootstrapGenerator < ModelGenerator
         
         source_root File.expand_path("../templates", __FILE__)
