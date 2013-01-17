@@ -12,7 +12,13 @@
           var attrs;
           el = $(this);
           attrs = {};
-          attrs[el.attr("name")] = el.val();
+
+          if(el.attr("type") == "radio"){
+            // value is set for *all* radios in a group; this causes all values to be the same for a given radio button group
+          } else {
+            attrs[el.attr("name")] = el.val();
+          }
+
           return model.set(attrs);
         });
       });
